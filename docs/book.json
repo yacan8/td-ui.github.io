@@ -2,7 +2,8 @@
   "title": "TD-UI",
   "language": "zh-hans",
   "plugins": ["toc", "-lunr", "-search", "search-pro", "donate",
-    "prism", "-highlight", "anchor-navigation-ex", "splitter"
+    "prism", "-highlight", "anchor-navigation-ex", "splitter",
+    "github", "github-buttons"
   ],
   "pluginsConfig": {
     "sharing": {
@@ -42,6 +43,16 @@
       "button": "赏",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
+    },
+    "github": {
+      "url": "https://github.com/td-ui"
+    },
+    "github-buttons": {
+      "repo": "td-ui/td-ui.github.io",
+      "types": [
+        "star"
+      ],
+      "size": "small"
     }
   }
 }
