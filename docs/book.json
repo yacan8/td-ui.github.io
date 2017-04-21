@@ -1,0 +1,24 @@
+{
+  "title": "TD-UI",
+  "language": "zh-hans",
+  "plugins": ["toc", "-search", "search-pro", "prism", "-highlight", "anchor-navigation-ex"],
+  "pluginsConfig": {
+    "search-pro": {
+      "cutWordLib": "nodejieba"
+    },
+    "anchor-navigation-ex": {
+      "showLevel": true,
+      "associatedWithSummary": true,
+      "mode": "float",
+      "float": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    },
+    "theme-default": {
+      "showLevel": true
+    }
+  }
+}
