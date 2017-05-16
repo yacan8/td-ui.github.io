@@ -1,7 +1,7 @@
 process.env.NODE_ENV = 'production'
 const Config = require('tdtool').Config
 const config1 = new Config({
-  entry: './src/index',
+  entry: './components/index',
   filename: 'td-ui.min.js',
   minimize: true,
   extends: ['react', ['less', {
@@ -9,7 +9,7 @@ const config1 = new Config({
   }]]
 })
 const config2 = new Config({
-  entry: './src/index',
+  entry: './components/index',
   filename: 'td-ui.js',
   extends: ['react', ['less', {
     extractCss: 'td-ui.css'

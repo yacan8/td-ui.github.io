@@ -13,7 +13,7 @@ if (ENV !== 'production' &&
     typeof window !== 'undefined') {
   console.warn(
     'You are using a whole package of td-ui, ' +
-    'please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.',
+    'please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.'
   );
 }
 
