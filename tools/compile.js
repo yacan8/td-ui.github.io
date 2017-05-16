@@ -8,5 +8,5 @@
 import runGulpTask from './runGulpTask';
 
 export default async function compile() {
-await runGulpTask('compile');
+  await runGulpTask('compile');
 }
