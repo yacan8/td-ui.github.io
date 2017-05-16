@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dist": "rm -rf dist && tdtool build",
-    "compile": "babel-node tools/run compile"
+    "compile": "babel-node tools/run compile",
+    "component": "babel-node tools/run component"
   },
   "babel": {
     "presets": [
@@ -22,6 +23,7 @@
     "chalk": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-filter": "^5.0.0",
     "gulp-logger": "^0.0.2",
     "gulp-watch": "^4.3.11",
     "less": "^2.7.2",
