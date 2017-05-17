@@ -1,1 +1,16 @@
+@import "../color/colors.less";
+
 @td-prefix                    : td;
+@td-btn-prefix                : ~"@{td-prefix}-btn";
+
+:export {
+  prefix: @td-prefix;
+  btnPrefix: @td-btn-prefix;
+}
+
+// Color
+@primary-color                : @blue-6;
+@success-color                : @green-6;
+@error-color                  : @red-6;
+@highlight-color              : @red-6;
+@warning-color                : @yellow-6;

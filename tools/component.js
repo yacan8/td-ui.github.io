@@ -8,5 +8,5 @@
 import runGulpTask from './runGulpTask';
 
 export default async function component() {
- await runGulpTask('component');
+  await runGulpTask('component');
 }

@@ -1,1 +1,3 @@
-import './index.less'
+import s from './index.less';
+
+export default s;

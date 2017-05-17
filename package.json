@@ -34,10 +34,17 @@
     "rucksack-css": "^0.9.1",
     "shelljs": "^0.7.7",
     "tdtool": "^0.0.5",
-    "tdtool-less": "^0.0.4",
-    "tdtool-react": "^0.0.3",
+    "tdtool-less": "^0.0.7",
+    "tdtool-react": "^0.0.4",
     "through2": "^2.0.3",
     "webpack": "^2.5.1",
     "yargs": "^8.0.1"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components-selector": "^1.0.20",
+    "classnames": "^2.2.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "styled-components": "^1.4.6"
   }
 }
