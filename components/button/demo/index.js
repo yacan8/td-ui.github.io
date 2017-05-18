@@ -7,7 +7,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import cn from 'classnames';
+import '../style';
 
 const div = document.createElement('div');
 document.body.appendChild(div);
