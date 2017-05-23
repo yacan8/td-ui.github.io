@@ -7,7 +7,35 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../style';
 
-const div = document.createElement('div');
-document.body.appendChild(div);
+const MOUNT_NODE = document.getElementById('app');
+
+let render = () => {
+  let Button = require('../index').default;
+
+  function Demo() {
+    return (
+      <div className="td">
+        <Button type="primary" onClick={() => alert('这是个测试')}>确定</Button>
+        <Button style={{marginLeft: 10}} onClick={() => alert('这也是个测试')}>取消</Button>
+      </div>
+    );
+  }
+
+  ReactDOM.render(<Demo />, MOUNT_NODE);
+};
+
+try {
+  render();
+} catch(e) {
+  console.log(e);
+}
+
+if (module.hot) {
+  module.hot.accept(['../index'], () => {
+    setTimeout(() => {
+      ReactDOM.unmountComponentAtNode(MOUNT_NODE);
+      render();
+    });
+  });
+}

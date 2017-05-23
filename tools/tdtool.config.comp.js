@@ -14,12 +14,11 @@ module.exports = component => {
     dist: './dist/' + component,
     sourceMap: true,
     extends: [['react', {
-      plugins: ['styled-components-selector'],
       source: [path.resolve(process.cwd(), 'components')]
     }], ['less', {
       extractCss: true
     }]],
-    template: true
+    template: './tools/index.tpl'
   })
   return config.resolve()
 }
