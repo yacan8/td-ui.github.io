@@ -14,6 +14,7 @@ module.exports = component => {
     dist: './dist/' + component,
     sourceMap: true,
     extends: [['react', {
+      eslint: true,
       source: [path.resolve(process.cwd(), 'components')]
     }], ['less', {
       extractCss: true

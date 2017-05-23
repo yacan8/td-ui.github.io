@@ -98,7 +98,7 @@ export default class Button extends Component {
       [`${prefixCls}-${type}`]: type,
       [`${prefixCls}-${sizeCls}`]: sizeCls,
       [`${prefixCls}-loading`]: loading,
-      [`${prefixCls}-clicked`]: clicked,
+      [`${prefixCls}-clicked`]: clicked
     }, className);
 
     const needInserted = React.Children.count(children) === 1;

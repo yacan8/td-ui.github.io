@@ -16,6 +16,7 @@ const config2 = new Config({
   entry: './components/index',
   filename: 'td-ui.js',
   extends: [['react', {
+    eslint: true,
     source: [path.resolve(process.cwd(), 'components')]
   }], ['less', {
     extractCss: 'td-ui.css'
