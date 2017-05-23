@@ -7,7 +7,8 @@
   "scripts": {
     "dist": "rm -rf dist && tdtool build",
     "compile": "babel-node tools/run compile",
-    "component": "babel-node tools/run component"
+    "component": "babel-node tools/run component",
+    "build": "npm run dist && npm run compile"
   },
   "babel": {
     "presets": [
