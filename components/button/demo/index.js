@@ -17,7 +17,9 @@ let render = () => {
     return (
       <div className="td">
         <Button type="primary" onClick={() => alert('这是个测试')}>确定</Button>
+        <Button type="primary" style={{marginLeft: 10}} size="large" onClick={() => alert('这是个测试')}>确定</Button>
         <Button style={{marginLeft: 10}} onClick={() => alert('这也是个测试')}>取消</Button>
+        <Button type="dashed" style={{marginLeft: 10}} size="small" onClick={() => alert('这也是个测试')}>取消</Button>
       </div>
     );
   }

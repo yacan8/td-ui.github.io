@@ -75,14 +75,28 @@ export default class Button extends Component {
 
   render() {
     const {
-      type, className, style, htmlType, children, prefixCls, ...others
+      type, size = '', className, style, htmlType, children, prefixCls, ...others
     }  = this.props;
 
     const { loading, clicked } = this.state;
 
+    // large => lg
+    // small => sm
+    let sizeCls = '';
+    switch (size) {
+      case 'large':
+        sizeCls = 'lg';
+        break;
+      case 'small':
+        sizeCls = 'sm';
+      default:
+        break;
+    }
+
     const st = Object.assign({}, style);
     const classNames = cn(prefixCls, {
       [`${prefixCls}-${type}`]: type,
+      [`${prefixCls}-${sizeCls}`]: sizeCls,
       [`${prefixCls}-loading`]: loading,
       [`${prefixCls}-clicked`]: clicked,
     }, className);

@@ -6,7 +6,9 @@
  */
 
 import runGulpTask from './runGulpTask';
+import open from 'open';
 
 export default async function component() {
   await runGulpTask('component');
+  await open('http://localhost:8080');
 }
