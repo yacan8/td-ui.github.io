@@ -38,7 +38,7 @@
     "shelljs": "^0.7.7",
     "tdtool": "^0.0.5",
     "tdtool-less": "^0.0.7",
-    "tdtool-react": "^0.0.7",
+    "tdtool-react": "^0.0.10",
     "through2": "^2.0.3",
     "webpack": "^2.5.1",
     "yargs": "^8.0.1"

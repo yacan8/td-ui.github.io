@@ -76,7 +76,7 @@ export default class Button extends Component {
   render() {
     const {
       type, size = '', className, style, htmlType, children, prefixCls, ...others
-    }  = this.props;
+    } = this.props;
 
     const { loading, clicked } = this.state;
 
@@ -89,6 +89,7 @@ export default class Button extends Component {
         break;
       case 'small':
         sizeCls = 'sm';
+        break;
       default:
         break;
     }

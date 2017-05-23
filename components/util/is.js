@@ -6,7 +6,7 @@
  */
 
 function type(obj) {
- return Object.prototype.toString.call(obj)
+  return Object.prototype.toString.call(obj)
 }
 
 exports.String = obj => type(obj) === '[object String]'
