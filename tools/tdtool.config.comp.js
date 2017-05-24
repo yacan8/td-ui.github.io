@@ -8,7 +8,7 @@
 import path from 'path';
 
 module.exports = component => {
-  const Config = require('tdtool').Config
+  const Config = require('tdtool').Config;
   const config = new Config({
     entry: `./components/${component}/demo/index`,
     dist: './dist/' + component,
@@ -20,6 +20,6 @@ module.exports = component => {
       extractCss: true
     }]],
     template: './tools/index.tpl'
-  })
-  return config.resolve()
+  });
+  return config.resolve();
 }
